@@ -13,6 +13,7 @@ URL:		http://sdlpango.sourceforge.net/
 BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	automake
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
