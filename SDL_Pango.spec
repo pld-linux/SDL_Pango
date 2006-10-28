@@ -2,12 +2,13 @@ Summary:	Pango engine to SDL
 Summary(pl):	Silnik Pango dla SDL
 Name:		SDL_Pango
 Version:	0.1.2
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/sdlpango/%{name}-%{version}.tar.gz
 # Source0-md5:	85bbf9bb7b1cee0538154dadd045418c
 Patch0:		%{name}-am.patch
+Patch1:		%{name}-0.1.2-API-adds.patch
 URL:		http://sdlpango.sourceforge.net/
 BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	autoconf >= 2.59-9
@@ -48,6 +49,7 @@ Statyczne biblioteki SDL_Pango.
 %prep
 %setup -q
 %patch0 -p0
+%patch1 -p0
 
 %build
 rm -f acinclude.m4
