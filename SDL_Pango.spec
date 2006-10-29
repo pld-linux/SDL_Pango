@@ -49,7 +49,7 @@ Statyczne biblioteki SDL_Pango.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch0 -p1
 %patch1 -p0
 
 %build
