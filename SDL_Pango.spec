@@ -1,5 +1,5 @@
 Summary:	Pango engine to SDL
-Summary(pl.UTF-8):   Silnik Pango dla SDL
+Summary(pl.UTF-8):	Silnik Pango dla SDL
 Name:		SDL_Pango
 Version:	0.1.2
 Release:	1
@@ -24,7 +24,7 @@ Silnik Pango dla SDL.
 
 %package devel
 Summary:	Header files and more to develop SDL_Pango applications
-Summary(pl.UTF-8):   Pliki nagłówkowe do rozwijania aplikacji używających SDL_Pango
+Summary(pl.UTF-8):	Pliki nagłówkowe do rozwijania aplikacji używających SDL_Pango
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	SDL-devel
@@ -37,7 +37,7 @@ Pliki nagłówkowe do rozwijania aplikacji używających SDL_Pango.
 
 %package static
 Summary:	Static SDL_Pango libraries
-Summary(pl.UTF-8):   Statyczne biblioteki SDL_Pango
+Summary(pl.UTF-8):	Statyczne biblioteki SDL_Pango
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
