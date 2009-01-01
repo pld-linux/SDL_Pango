@@ -14,6 +14,8 @@ BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	automake
 BuildRequires:	libtool
+BuildRequires:	pango-devel
+BuildRequires:	pkgconfig >= 0.9.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -78,6 +80,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README AUTHORS ChangeLog
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
+%ghost %attr(755,root,root) %{_libdir}/lib*.so.?
 
 %files devel
 %defattr(644,root,root,755)
