@@ -1,0 +1,10 @@
+--- src/SDL_Pango.c	2026-05-08 12:19:18.933283163 +0200
++++ src/SDL_Pango.c	2026-05-08 12:20:03.709089727 +0200
+@@ -318,6 +318,7 @@
+ {
+     return IS_INITIALIZED;
+ }
++void SDLPango_CopyFTBitmapToSurface(const FT_Bitmap *bitmap, SDL_Surface *surface, const SDLPango_Matrix *matrix, SDL_Rect *rect);
+ 
+ /*!
+     Draw glyphs on rect.
